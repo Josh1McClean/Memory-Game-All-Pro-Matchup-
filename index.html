@@ -1,0 +1,332 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>All-Pro Matchup!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+        integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <!--This is the title of the page (it looks generic out first until you create the style to alter it in CSS)-->
+    <div class="container" id="start">
+        <div class="row">
+            <div class="col-12">
+                <div id="title">
+                    <p>All</p>
+                    <p>-Pro-</p>
+                    <p>Matchup!</p>
+                </div>
+            </div>
+        </div>
+
+        <!--This is the best score tracker and dash icon that I got from https://entitycode.com/-->
+        <div class="row text-center">
+            <div class="col-sm-6 offset-sm-3 col-12 mt-4 mb-4">
+                <h2>Best Score: <span id="best-score">&mdash;</span></h2>
+            </div>
+        </div>
+
+        <!--This is the Start button-->
+        <div class="row text-center">
+            <div class="col-4 offset-4">
+                <button id="start-button" class="btn btn-primary btn-block btn-lg pt-4 pb-4">Start!</button>
+            </div>
+        </div>
+    </div>
+
+    <!--These are the card elements. They're not in chronological order, but each of them share the same purpose-->
+    <div class="container" id="game">
+        <div class="row">
+            <div class="col-2 offset-1">
+                <div class="game-card-wrapper">
+                    <div class="game-card">
+                        <div class="front">🏈</div>
+                        <div class="back">
+                            <img src="https://media.giphy.com/media/5zw5i0O2o6CJasXvnb/giphy.gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="game-card-wrapper">
+                    <div class="game-card">
+                        <div class="front">🏈</div>
+                        <div class="back">
+                            <img src="https://media.giphy.com/media/WT3AwLHlPM9fOHbJL1/giphy.gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="game-card-wrapper">
+                    <div class="game-card">
+                        <div class="front">🏈</div>
+                        <div class="back">
+                            <img src="https://media.giphy.com/media/x4DJXQJIs54re/giphy.gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="game-card-wrapper">
+                    <div class="game-card">
+                        <div class="front">🏈</div>
+                        <div class="back">
+                            <img src="https://media.giphy.com/media/l4JzhHpwqWEg3L6Ss/giphy.gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="game-card-wrapper">
+                    <div class="game-card">
+                        <div class="front">🏈</div>
+                        <div class="back">
+                            <img src="https://media.giphy.com/media/hvLo02GMIlLKYrmFah/giphy.gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2 offset-1">
+                <div class="game-card-wrapper">
+                    <div class="game-card">
+                        <div class="front">🏈</div>
+                        <div class="back">
+                            <img src="https://media.giphy.com/media/lok4x2Dl6oR2onACRN/giphy.gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="game-card-wrapper">
+                    <div class="game-card">
+                        <div class="front">🏈</div>
+                        <div class="back">
+                            <img src="https://media.giphy.com/media/xUPGcB5L0TIfLrDH8c/giphy.gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="game-card-wrapper">
+                    <div class="game-card">
+                        <div class="front">🏈</div>
+                        <div class="back">
+                            <img src="https://media.giphy.com/media/3ohA2QGNckUwtZQN6U/giphy.gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="game-card-wrapper">
+                    <div class="game-card">
+                        <div class="front">🏈</div>
+                        <div class="back">
+                            <img src="https://media.giphy.com/media/cJfl9iD2mQjaZqsNhD/giphy.gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="game-card-wrapper">
+                    <div class="game-card">
+                        <div class="front">🏈</div>
+                        <div class="back">
+                            <img src="https://media.giphy.com/media/BCfmpa8DkVL6IbZdn3/giphy.gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2 offset-1">
+                <div class="game-card-wrapper">
+                    <div class="game-card">
+                        <div class="front">🏈</div>
+                        <div class="back">
+                            <img src="https://media.giphy.com/media/5zw5i0O2o6CJasXvnb/giphy.gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="game-card-wrapper">
+                    <div class="game-card">
+                        <div class="front">🏈</div>
+                        <div class="back">
+                            <img src="https://media.giphy.com/media/W4cLaAVaU6EnrHkKoj/giphy.gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--This is the current score that'll keep track of the amount of times you click on the card.-->
+            <div class="col-2">
+                <div id="current-score"></div>
+            </div>
+
+            <div class="col-2">
+                <div class="game-card-wrapper">
+                    <div class="game-card">
+                        <div class="front">🏈</div>
+                        <div class="back">
+                            <img src="https://media.giphy.com/media/vd7A5xaCAzIClkoc0P/giphy.gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="game-card-wrapper">
+                    <div class="game-card">
+                        <div class="front">🏈</div>
+                        <div class="back">
+                            <img src="https://media.giphy.com/media/W4cLaAVaU6EnrHkKoj/giphy.gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2 offset-1">
+                <div class="game-card-wrapper">
+                    <div class="game-card">
+                        <div class="front">🏈</div>
+                        <div class="back">
+                            <img src="https://media.giphy.com/media/vd7A5xaCAzIClkoc0P/giphy.gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="game-card-wrapper">
+                    <div class="game-card">
+                        <div class="front">🏈</div>
+                        <div class="back">
+                            <img src="https://media.giphy.com/media/WT3AwLHlPM9fOHbJL1/giphy.gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="game-card-wrapper">
+                    <div class="game-card">
+                        <div class="front">🏈</div>
+                        <div class="back">
+                            <img src="https://media.giphy.com/media/x4DJXQJIs54re/giphy.gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="game-card-wrapper">
+                    <div class="game-card">
+                        <div class="front">🏈</div>
+                        <div class="back">
+                            <img src="https://media.giphy.com/media/l4JzhHpwqWEg3L6Ss/giphy.gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="game-card-wrapper">
+                    <div class="game-card">
+                        <div class="front">🏈</div>
+                        <div class="back">
+                            <img src="https://media.giphy.com/media/hvLo02GMIlLKYrmFah/giphy.gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2 offset-1">
+                <div class="game-card-wrapper">
+                    <div class="game-card">
+                        <div class="front">🏈</div>
+                        <div class="back">
+                            <img src="https://media.giphy.com/media/lok4x2Dl6oR2onACRN/giphy.gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="game-card-wrapper">
+                    <div class="game-card">
+                        <div class="front">🏈</div>
+                        <div class="back">
+                            <img src="https://media.giphy.com/media/xUPGcB5L0TIfLrDH8c/giphy.gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="game-card-wrapper">
+                    <div class="game-card">
+                        <div class="front">🏈</div>
+                        <div class="back">
+                            <img src="https://media.giphy.com/media/3ohA2QGNckUwtZQN6U/giphy.gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="game-card-wrapper">
+                    <div class="game-card">
+                        <div class="front">🏈</div>
+                        <div class="back">
+                            <img src="https://media.giphy.com/media/cJfl9iD2mQjaZqsNhD/giphy.gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2">
+                <div class="game-card-wrapper">
+                    <div class="game-card">
+                        <div class="front">🏈</div>
+                        <div class="back">
+                            <img src="https://media.giphy.com/media/BCfmpa8DkVL6IbZdn3/giphy.gif">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--This will pop up once you've completed the game and you'll have the option to play again. Your score will become the best score once
+    you beat it-->
+    <div id="end">
+        <h1>You win 🥳!</h1>
+        <h4 id="final-score"></h4>
+        <a href="index.html" id="restart-button" class="btn btn-primary btn-lg p-4">Play again?</a>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

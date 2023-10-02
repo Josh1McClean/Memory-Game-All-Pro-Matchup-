@@ -1,0 +1,184 @@
+/*The comments above these blocks of code will inform you of what will happen if they're commented out or delete them*/
+
+/*Makes the background color dark gray*/
+body {
+    background-color: DarkGray;
+}
+
+/*Allos the cursor to change from the default arrow, to a finger pointer*/
+.btn:hover {
+    cursor: pointer;
+}
+
+/*Alters the look of the title and best score*/
+#start {
+    height: 90vh;
+    font-family: 'Bungee', cursive;
+    color: darkblue;
+    position: relative;
+}
+
+/*Alters the look of the title and best score*/
+#title {
+    font-size: 8rem;
+    perspective: 600px;
+}
+
+/*Changes the alignment of the title, best score, and start button*/
+#title>p {
+    transform: rotateX(45deg);
+    line-height: 0.75;
+    text-align: center;
+    color: darkblue;
+}
+
+/*Is responsible for the functionality of the start button*/
+#start.playing {
+    margin-top: -90vh;
+    transition: margin-top 1s;
+}
+
+/*The entire game is connected to this code block*/
+#start.playing+#game {
+    display: flex;
+}
+
+/*Allows the game to be played correctly and intertwines the functionality of the clicking start button moving us down to the game*/
+#game {
+    display: none;
+}
+
+/*The entire game is connected to this code block, but not the current score tracker*/
+#game .row {
+    width: 100%;
+}
+
+/*The entire game is connected to this code block, but not the current score tracker, and the game can still be played but the cards wont show*/
+.container {
+    flex-wrap: wrap;
+}
+
+/*The entire game is connected to this code block in regards to how the cards look*/
+.game-card-wrapper {
+    perspective: 600px;
+    width: 75%;
+    padding-bottom: 75%;
+    position: relative;
+    margin: 1rem auto;
+}
+
+/*Allow the cursor to be a finger pointer as opposed to the default arrow*/
+.game-card-wrapper:hover {
+    cursor: pointer;
+}
+
+/*Allows the game card to flip over in a clean transition*/
+.game-card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+/*Allows the game card to flip*/
+.game-card.flipped {
+    transform: rotateY(180deg);
+}
+
+/*Allows the game card to transition between the front and back of the game cards*/
+.front,
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: 2px solid white;
+    overflow: hidden;
+}
+
+/*Shows the front of the card*/
+.front {
+    background: linear-gradient(315deg, darkblue, black);
+    font-size: 3rem;
+}
+
+/*Flips to the back of the game card*/
+.back {
+    transform: rotateY(180deg);
+}
+
+/*Shows the image on the back of the game card*/
+.back>img {
+    height: 100%;
+    width: auto;
+}
+
+/*Shows the score tracker and how its been styled*/
+#current-score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-family: 'Bungee', cursive;
+    color: darkblue;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/*Hides the end game alert until you've finished playing*/
+#end {
+    display: none;
+}
+
+/*Allows the end game alert to show once you've finished playing*/
+#end.game-over {
+    display: flex;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.75);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+    font-family: 'Bungee', cursive;
+    text-align: center;
+}
+
+/*Size of the font for the text within the h1 tag*/
+#end h1 {
+    font-size: 8rem;
+}
+
+/*Size of the font for the text within the h4 tag*/
+#end h4 {
+    font-size: 3rem;
+}
+
+/*checks the maximum width of the viewport (the browser window or device screen) and applies the styles contained within when the maximum width is 
+992 pixels or less.*/
+@media (max-width: 992px) {
+    .game-card-wrapper {
+        width: 100%;
+        padding-bottom: 100%;
+    }
+}
+
+/*checks the maximum width of the viewport (the browser window or device screen) and applies the styles contained within when the maximum width is 
+992 pixels or less.*/
+@media (max-width: 992px) {
+    .game-card-wrapper {
+        width: 120%;
+        padding-bottom: 120%;
+    }
+}
